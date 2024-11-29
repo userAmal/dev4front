@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card shadow mb-4">
+    <div class="card-body">
+    <table class="table table-striped">
+    <tr> <th>numéro de reservation</th><th>Nom et prénom de client </th> <th>Prix séjour</th> <th>Date début</th> <th>Date fin</th></tr>
+    <tbody *ngFor="let reservation of reservations">
+    <tr >
+    <td>{{reservation.idReservation}}</td>
+    <td>{{reservation.nomclient}}</td>
+    <td>{{reservation.prixsejour}}</td>
+    <td>{{reservation.datedebut | date:'dd/MM/yyyy'}}</td>
+    <td>{{reservation.datefin | date:'dd/MM/yyyy'}}</td>
+
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
